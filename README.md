@@ -47,7 +47,7 @@ User=root
 Type=simple
 Restart=always
 RestartSec=120
-ExecStart=/root/avail-node/data-avail --base-path /root/avail-node/data --chain /root/avail-node/chainspec.raw.json --port 30333 --validator --name "molla202"
+ExecStart=/root/avail-node/data-avail-linux-amd64 --base-path /root/avail-node/data --chain /root/avail-node/chainspec.raw.json --port 30333 --validator --name "molla202"
 
 [Install]
 WantedBy=multi-user.target
