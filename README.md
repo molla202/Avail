@@ -70,12 +70,14 @@ sudo systemctl status availd.service
 journalctl -f -u availd.service
 ```
 
-### Stake Tokens
- https://kate.avail.tools/
+### Cüzdan olusturma
+
+https://kate.avail.tools/
 
 
-## Generate Session key
-```curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933```
+### Sezon keyi oluşturuyoruz sunucumuzda
+```
+curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
+```
 
-## Submit Session Key
 
