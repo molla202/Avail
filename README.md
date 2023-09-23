@@ -13,12 +13,12 @@ cd ..
 
 ### Create Avail File in home Directory
 ```
-sudo mkdir /root/avail/avail-node/
+sudo mkdir /root/avail-node/
 ```
 
 ### Go To Avail File You Created
 ```
-cd /root/avail/avail-node/
+cd /root/avail-node/
 ```
 
 ### Download The Required Files
@@ -46,7 +46,7 @@ User=avail
 Type=simple
 Restart=always
 RestartSec=120
-ExecStart=/root/avail/avail-node/data-avail --base-path /root/avail/avail-node/data --chain /root/avail/avail-node/chainspec.raw.json --port 30333 --validator --name "molla202"
+ExecStart=/root/avail-node/data-avail --base-path /root/avail-node/data --chain /root/avail-node/chainspec.raw.json --port 30333 --validator --name "molla202"
 
 [Install]
 WantedBy=multi-user.target
