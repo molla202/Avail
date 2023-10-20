@@ -1,3 +1,5 @@
+Not: Portlar servis dosyasında yazıyor değiştirin.
+
 ### Servis oluşturalım.
 NOT: molla202 yazan kısmı değiştiriniz explorerdeki görünen isminiz...
 ```
@@ -28,11 +30,6 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl enable availd.service
 sudo systemctl restart availd.service
-```
-
-### Durmuna bakalım
-```
-sudo systemctl status availd.service
 ```
 
 ### Log kontrol
