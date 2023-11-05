@@ -70,3 +70,62 @@ journalctl -u availd -fo cat
 ```
 curl "http://localhost:7000/v1/latest_block"
 ```
+
+
+--------------------------------------------
+
+## <h1 align="center">Avail Light Node ubuntu 20</h1>
+
+## Update
+```
+sudo apt update && sudo apt upgrade -y
+sudo apt install make clang pkg-config libssl-dev build-essential git screen protobuf-compiler -y
+```
+
+
+
+### Rust kuralım
+```
+curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
+rustup update nightly
+rustup target add wasm32-unknown-unknown --toolchain nightly
+```
+```
+screen -S alight
+```
+### Dosyaları çekelim
+```
+git clone https://github.com/availproject/avail-light.git
+cd avail-light
+git checkout v1.7.2
+```
+### Kuralım
+```
+cargo build --release
+```
+
+### Servis oluşturalım
+```
+sudo tee /etc/systemd/system/availd.service > /dev/null <<EOF
+[Unit] 
+Description=Avail Light Client
+After=network.target
+StartLimitIntervalSec=0
+[Service] 
+User=root 
+ExecStart= /root/avail-light/target/release/avail-light --network biryani
+Restart=always 
+RestartSec=120
+[Install] 
+WantedBy=multi-user.target
+EOF
+```
+### Başlatalım
+```
+sudo systemctl daemon-reload
+sudo systemctl enable availd.service
+sudo systemctl restart availd.service
+```
+### Loglar
+journalctl -u availd -fo cat
