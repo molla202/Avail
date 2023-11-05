@@ -87,6 +87,9 @@ sudo apt install make clang pkg-config libssl-dev build-essential git screen pro
 ### Rust kuralım
 ```
 curl https://sh.rustup.rs -sSf | sh
+```
+Not: 1 seçiyoruz
+```
 source $HOME/.cargo/env
 rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
