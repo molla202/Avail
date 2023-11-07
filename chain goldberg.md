@@ -80,9 +80,10 @@ https://kate.avail.tools/
 
 not: telemetry den ismizi yazarak bakınız.
 
-https://telemetry.avail.tools/#/0xd12003ac837853b062aaccca5ce87ac4838c48447e41db4a3dcfb5bf312350c6
+https://telemetry.avail.tools/#list/0x6f09966420b2608d1947ccfb0f2a362450d1fc7fd902c29b67c906eaa965a7ae
 
-![image](https://github.com/molla202/Avail/assets/91562185/96b0c185-ce88-454e-856a-a7268e21e393)
+![image](https://github.com/molla202/Avail/assets/91562185/85b2a9c3-7821-41f0-86c6-9b4a1b175cc3)
+
 
 
 ### Sezon keyi oluşturuyoruz sunucumuzda (daha lazım değil gerenk yok)
