@@ -131,4 +131,6 @@ sudo systemctl enable availd.service
 sudo systemctl restart availd.service
 ```
 ### Loglar
+```
 journalctl -u availd -fo cat
+```
