@@ -122,6 +122,8 @@ sudo systemctl restart availd
 journalctl -u availd -fo cat
 ```
 
+Not: eğer hata verirse resimdeki gibi bu kısımdaki kurulumu yapıp restart edip deneyin https://github.com/molla202/Avail/blob/main/Light-Node-Goldberg.md#rust-kural%C4%B1m
+
 #### Son blok görüntüleme
 ```
 curl "http://localhost:7000/v1/latest_block"
