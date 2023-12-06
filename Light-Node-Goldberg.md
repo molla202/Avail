@@ -87,7 +87,7 @@ screen -S alight
 ### Avail Light Client'i yükleyin
 ```
 cd
-wget https://github.com/molla202/Avail/blob/main/avail-light.tar.gz
+wget https://github.com/molla202/Avail/raw/main/avail-light.tar.gz
 tar -xvzf avail-light.tar.gz
 ```
 
